@@ -1,0 +1,246 @@
+/////Minecraft changes/////
+
+//ITEMS//
+
+
+//BLOCKS//
+tile.stoneSlab.brick.name=Natural Bricks Slab
+tile.brick.name=Natural Bricks
+
+
+
+//ITEMS//
+
+item.bucket_cast.name=Bucket Cast
+item.clay_bucket.name=Clay Bucket
+item.terracotta_bucket_empty.name=Terracotta Bucket
+item.terracotta_bucket_water.name=Terracotta Water Bucket
+item.terracotta_bucket_lava.name=Terracotta Lava Bucket
+
+item.clayball_colored.white.name=White Stained Clay
+item.clayball_colored.orange.name=Orange Stained Clay
+item.clayball_colored.magenta.name=Magenta Stained Clay
+item.clayball_colored.light_blue.name=Light Blue Stained Clay
+item.clayball_colored.yellow.name=Yellow Stained Clay
+item.clayball_colored.lime.name=Lime Stained Clay
+item.clayball_colored.pink.name=Pink Stained Clay
+item.clayball_colored.gray.name=Gray Stained Clay
+item.clayball_colored.silver.name=Light Gray Stained Clay
+item.clayball_colored.cyan.name=Cyan Stained Clay
+item.clayball_colored.purple.name=Purple Stained Clay
+item.clayball_colored.blue.name=Blue Stained Clay
+item.clayball_colored.brown.name=Brown Stained Clay
+item.clayball_colored.green.name=Green Stained Clay
+item.clayball_colored.red.name=Red Stained Clay
+item.clayball_colored.black.name=Black Stained Clay
+/////////////////////////////////////////////////
+
+item.terracottabrick_colored.white.name=White Stained Brick
+item.terracottabrick_colored.orange.name=Orange Stained Brick
+item.terracottabrick_colored.magenta.name=Magenta Stained Brick
+item.terracottabrick_colored.light_blue.name=Light Blue Stained Brick
+item.terracottabrick_colored.yellow.name=Yellow Stained Brick
+item.terracottabrick_colored.lime.name=Lime Stained Brick
+item.terracottabrick_colored.pink.name=Pink Stained Brick
+item.terracottabrick_colored.gray.name=Gray Stained Brick
+item.terracottabrick_colored.silver.name=Light Gray Stained Brick
+item.terracottabrick_colored.cyan.name=Cyan Stained Brick
+item.terracottabrick_colored.purple.name=Purple Stained Brick
+item.terracottabrick_colored.blue.name=Blue Stained Brick
+item.terracottabrick_colored.brown.name=Brown Stained Brick
+item.terracottabrick_colored.green.name=Green Stained Brick
+item.terracottabrick_colored.red.name=Red Stained Brick
+item.terracottabrick_colored.black.name=Black Stained Brick
+
+
+//BLOCKS//
+
+tile.demonite.name=Demonite
+
+tile.bricked_terracotta.white.name=White Bricks
+tile.bricked_terracotta.orange.name=Orange Bricks
+tile.bricked_terracotta.magenta.name=Magenta Bricks
+tile.bricked_terracotta.light_blue.name=Light Blue Bricks
+tile.bricked_terracotta.yellow.name=Yellow Bricks
+tile.bricked_terracotta.lime.name=Lime Bricks
+tile.bricked_terracotta.pink.name=Pink Bricks
+tile.bricked_terracotta.gray.name=Gray Bricks
+tile.bricked_terracotta.silver.name=Light Gray Bricks
+tile.bricked_terracotta.cyan.name=Cyan Bricks
+tile.bricked_terracotta.purple.name=Purple Bricks
+tile.bricked_terracotta.blue.name=Blue Bricks
+tile.bricked_terracotta.brown.name=Brown Bricks
+tile.bricked_terracotta.green.name=Green Bricks
+tile.bricked_terracotta.red.name=Red Bricks
+tile.bricked_terracotta.black.name=Black Bricks
+
+
+tile.slabbed_terracotta.white.name=White Slabbed Terracotta
+tile.slabbed_terracotta.orange.name=Orange Slabbed Terracotta
+tile.slabbed_terracotta.magenta.name=Magenta Slabbed Terracotta
+tile.slabbed_terracotta.light_blue.name=Light Blue Slabbed Terracotta
+tile.slabbed_terracotta.yellow.name=Yellow Slabbed Terracotta
+tile.slabbed_terracotta.lime.name=Lime Slabbed Terracotta
+tile.slabbed_terracotta.pink.name=Pink Slabbed Terracotta
+tile.slabbed_terracotta.gray.name=Gray Slabbed Terracotta
+tile.slabbed_terracotta.silver.name=Light Gray Slabbed Terracotta
+tile.slabbed_terracotta.cyan.name=Cyan Slabbed Terracotta
+tile.slabbed_terracotta.purple.name=Purple Slabbed Terracotta
+tile.slabbed_terracotta.blue.name=Blue Slabbed Terracotta
+tile.slabbed_terracotta.brown.name=Brown Slabbed Terracotta
+tile.slabbed_terracotta.green.name=Green Slabbed Terracotta
+tile.slabbed_terracotta.red.name=Red Slabbed Terracotta
+tile.slabbed_terracotta.black.name=Black Slabbed Terracotta
+
+tile.colored_clay.white.name=White Stained Clay
+tile.colored_clay.orange.name=Orange Stained Clay
+tile.colored_clay.magenta.name=Magenta Stained Clay
+tile.colored_clay.light_blue.name=Light Blue Stained Clay
+tile.colored_clay.yellow.name=Yellow Stained Clay
+tile.colored_clay.lime.name=Lime Stained Clay
+tile.colored_clay.pink.name=Pink Stained Clay
+tile.colored_clay.gray.name=Gray Stained Clay
+tile.colored_clay.silver.name=Light Gray Stained Clay
+tile.colored_clay.cyan.name=Cyan Stained Clay
+tile.colored_clay.purple.name=Purple Stained Clay
+tile.colored_clay.blue.name=Blue Stained Clay
+tile.colored_clay.brown.name=Brown Stained Clay
+tile.colored_clay.green.name=Green Stained Clay
+tile.colored_clay.red.name=Red Stained Clay
+tile.colored_clay.black.name=Black Stained Clay
+
+tile.bricked_stairs_white.name=White Bricks Stairs
+tile.bricked_stairs_orange.name=Orange Bricks Stairs
+tile.bricked_stairs_magenta.name=Magenta Bricks Stairs
+tile.bricked_stairs_light_blue.name=Light Blue Bricks Stairs
+tile.bricked_stairs_yellow.name=Yellow Bricks Stairs
+tile.bricked_stairs_lime.name=Lime Bricks Stairs
+tile.bricked_stairs_pink.name=Pink Bricks Stairs
+tile.bricked_stairs_gray.name=Gray Bricks Stairs
+tile.bricked_stairs_silver.name=Light Gray Bricks Stairs
+tile.bricked_stairs_cyan.name=Cyan Bricks Stairs
+tile.bricked_stairs_purple.name=Purple Bricks Stairs
+tile.bricked_stairs_blue.name=Blue Bricks Stairs
+tile.bricked_stairs_brown.name=Brown Bricks Stairs
+tile.bricked_stairs_green.name=Green Bricks Stairs
+tile.bricked_stairs_red.name=Red Bricks Stairs
+tile.bricked_stairs_black.name=Black Bricks Stairs
+
+tile.terracotta_stairs_white.name=White Terracotta Stairs
+tile.terracotta_stairs_orange.name=Orange Terracotta Stairs
+tile.terracotta_stairs_magenta.name=Magenta Terracotta Stairs
+tile.terracotta_stairs_light_blue.name=Light Blue Terracotta Stairs
+tile.terracotta_stairs_yellow.name=Yellow Terracotta Stairs
+tile.terracotta_stairs_lime.name=Lime Terracotta Stairs
+tile.terracotta_stairs_pink.name=Pink Terracotta Stairs
+tile.terracotta_stairs_gray.name=Gray Terracotta Stairs
+tile.terracotta_stairs_silver.name=Light Gray Terracotta Stairs
+tile.terracotta_stairs_cyan.name=Cyan Terracotta Stairs
+tile.terracotta_stairs_purple.name=Purple Terracotta Stairs
+tile.terracotta_stairs_blue.name=Blue Terracotta Stairs
+tile.terracotta_stairs_brown.name=Brown Terracotta Stairs
+tile.terracotta_stairs_green.name=Green Terracotta Stairs
+tile.terracotta_stairs_red.name=Red Terracotta Stairs
+tile.terracotta_stairs_black.name=Black Terracotta Stairs
+
+tile.concrete_stairs_white.name=White Concrete Stairs
+tile.concrete_stairs_orange.name=Orange Concrete Stairs
+tile.concrete_stairs_magenta.name=Magenta Concrete Stairs
+tile.concrete_stairs_light_blue.name=Light Blue Concrete Stairs
+tile.concrete_stairs_yellow.name=Yellow Concrete Stairs
+tile.concrete_stairs_lime.name=Lime Concrete Stairs
+tile.concrete_stairs_pink.name=Pink Concrete Stairs
+tile.concrete_stairs_gray.name=Gray Concrete Stairs
+tile.concrete_stairs_silver.name=Light Gray Concrete Stairs
+tile.concrete_stairs_cyan.name=Cyan Concrete Stairs
+tile.concrete_stairs_purple.name=Purple Concrete Stairs
+tile.concrete_stairs_blue.name=Blue Concrete Stairs
+tile.concrete_stairs_brown.name=Brown Concrete Stairs
+tile.concrete_stairs_green.name=Green Concrete Stairs
+tile.concrete_stairs_red.name=Red Concrete Stairs
+tile.concrete_stairs_black.name=Black Concrete Stairs
+
+tile.slabbed_terracotta_stairs_white.name=White Slabbed Terracotta Stairs
+tile.slabbed_terracotta_stairs_orange.name=Orange Slabbed Terracotta Stairs
+tile.slabbed_terracotta_stairs_magenta.name=Magenta Slabbed Terracotta Stairs
+tile.slabbed_terracotta_stairs_light_blue.name=Light Blue Slabbed Terracotta Stairs
+tile.slabbed_terracotta_stairs_yellow.name=Yellow Slabbed Terracotta Stairs
+tile.slabbed_terracotta_stairs_lime.name=Lime Slabbed Terracotta Stairs
+tile.slabbed_terracotta_stairs_pink.name=Pink Slabbed Terracotta Stairs
+tile.slabbed_terracotta_stairs_gray.name=Gray Slabbed Terracotta Stairs
+tile.slabbed_terracotta_stairs_silver.name=Light Gray Slabbed Terracotta Stairs
+tile.slabbed_terracotta_stairs_cyan.name=Cyan Slabbed Terracotta Stairs
+tile.slabbed_terracotta_stairs_purple.name=Purple Slabbed Terracotta Stairs
+tile.slabbed_terracotta_stairs_blue.name=Blue Slabbed Terracotta Stairs
+tile.slabbed_terracotta_stairs_brown.name=Brown Slabbed Terracotta Stairs
+tile.slabbed_terracotta_stairs_green.name=Green Slabbed Terracotta Stairs
+tile.slabbed_terracotta_stairs_red.name=Red Slabbed Terracotta Stairs
+tile.slabbed_terracotta_stairs_black.name=Black Slabbed Terracotta Stairs
+
+tile.terracotta_halfslab_a.white.name=White Terracotta Slab
+tile.terracotta_halfslab_a.orange.name=Orange Terracotta Slab
+tile.terracotta_halfslab_a.magenta.name=Magenta Terracotta Slab
+tile.terracotta_halfslab_a.light_blue.name=Light Blue Terracotta Slab
+tile.terracotta_halfslab_a.yellow.name=Yellow Terracotta Slab
+tile.terracotta_halfslab_a.lime.name=Lime Terracotta Slab
+tile.terracotta_halfslab_a.pink.name=Pink Terracotta Slab
+tile.terracotta_halfslab_a.gray.name=Gray Terracotta Slab
+tile.terracotta_halfslab_b.silver.name=Light Gray Terracotta Slab
+tile.terracotta_halfslab_b.cyan.name=Cyan Terracotta Slab
+tile.terracotta_halfslab_b.purple.name=Purple Terracotta Slab
+tile.terracotta_halfslab_b.blue.name=Blue Terracotta Slab
+tile.terracotta_halfslab_b.brown.name=Brown Terracotta Slab
+tile.terracotta_halfslab_b.green.name=Green Terracotta Slab
+tile.terracotta_halfslab_b.red.name=Red Terracotta Slab
+tile.terracotta_halfslab_b.black.name=Black Terracotta Slab
+
+tile.concrete_halfslab_a.white.name=White Concrete Slab
+tile.concrete_halfslab_a.orange.name=Orange Concrete Slab
+tile.concrete_halfslab_a.magenta.name=Magenta Concrete Slab
+tile.concrete_halfslab_a.light_blue.name=Light Blue Concrete Slab
+tile.concrete_halfslab_a.yellow.name=Yellow Concrete Slab
+tile.concrete_halfslab_a.lime.name=Lime Concrete Slab
+tile.concrete_halfslab_a.pink.name=Pink Concrete Slab
+tile.concrete_halfslab_a.gray.name=Gray Concrete Slab
+tile.concrete_halfslab_b.silver.name=Light Gray Concrete Slab
+tile.concrete_halfslab_b.cyan.name=Cyan Concrete Slab
+tile.concrete_halfslab_b.purple.name=Purple Concrete Slab
+tile.concrete_halfslab_b.blue.name=Blue Concrete Slab
+tile.concrete_halfslab_b.brown.name=Brown Concrete Slab
+tile.concrete_halfslab_b.green.name=Green Concrete Slab
+tile.concrete_halfslab_b.red.name=Red Concrete Slab
+tile.concrete_halfslab_b.black.name=Black Concrete Slab
+
+tile.slabbed_terracotta_halfslab_a.white.name=White Slabbed Terracotta Slab
+tile.slabbed_terracotta_halfslab_a.orange.name=Orange Slabbed Terracotta Slab
+tile.slabbed_terracotta_halfslab_a.magenta.name=Magenta Slabbed Terracotta Slab
+tile.slabbed_terracotta_halfslab_a.light_blue.name=Light Blue Slabbed Terracotta Slab
+tile.slabbed_terracotta_halfslab_a.yellow.name=Yellow Slabbed Terracotta Slab
+tile.slabbed_terracotta_halfslab_a.lime.name=Lime Slabbed Terracotta Slab
+tile.slabbed_terracotta_halfslab_a.pink.name=Pink Slabbed Terracotta Slab
+tile.slabbed_terracotta_halfslab_a.gray.name=Gray Slabbed Terracotta Slab
+tile.slabbed_terracotta_halfslab_b.silver.name=Light Gray Slabbed Terracotta Slab
+tile.slabbed_terracotta_halfslab_b.cyan.name=Cyan Slabbed Terracotta Slab
+tile.slabbed_terracotta_halfslab_b.purple.name=Purple Slabbed Terracotta Slab
+tile.slabbed_terracotta_halfslab_b.blue.name=Blue Slabbed Terracotta Slab
+tile.slabbed_terracotta_halfslab_b.brown.name=Brown Slabbed Terracotta Slab
+tile.slabbed_terracotta_halfslab_b.green.name=Green Slabbed Terracotta Slab
+tile.slabbed_terracotta_halfslab_b.red.name=Red Slabbed Terracotta Slab
+tile.slabbed_terracotta_halfslab_b.black.name=Black Slabbed Terracotta Slab
+
+tile.bricked_halfslab_a.white.name=White Bricks Slab
+tile.bricked_halfslab_a.orange.name=Orange Bricks Slab
+tile.bricked_halfslab_a.magenta.name=Magenta Bricks Slab
+tile.bricked_halfslab_a.light_blue.name=Light Blue Bricks Slab
+tile.bricked_halfslab_a.yellow.name=Yellow Bricks Slab
+tile.bricked_halfslab_a.lime.name=Lime Bricks Slab
+tile.bricked_halfslab_a.pink.name=Pink Bricks Slab
+tile.bricked_halfslab_a.gray.name=Gray Bricks Slab
+tile.bricked_halfslab_b.silver.name=Light Gray Bricks Slab
+tile.bricked_halfslab_b.cyan.name=Cyan Bricks Slab
+tile.bricked_halfslab_b.purple.name=Purple Bricks Slab
+tile.bricked_halfslab_b.blue.name=Blue Bricks Slab
+tile.bricked_halfslab_b.brown.name=Brown Bricks Slab
+tile.bricked_halfslab_b.green.name=Green Bricks Slab
+tile.bricked_halfslab_b.red.name=Red Bricks Slab
+tile.bricked_halfslab_b.black.name=Black Bricks Slab
