@@ -1,0 +1,52 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "minecraft:cube_all"
+    },
+    "variants": {
+        "color": {
+        
+            "silver": {
+                "textures": {
+                    "all": "minecraft:blocks/concrete_silver"
+                }
+            },
+            "cyan": {
+                "textures": {
+                    "all": "minecraft:blocks/concrete_cyan"
+                }
+            },
+            "purple": {
+                "textures": {
+                    "all": "minecraft:blocks/concrete_purple"
+                }
+            },
+            "blue": {
+                "textures": {
+                    "all": "minecraft:blocks/concrete_blue"
+                }
+            },
+            "brown": {
+                "textures": {
+                    "all": "minecraft:blocks/concrete_brown"
+                }
+            },
+            "green": {
+                "textures": {
+                    "all": "minecraft:blocks/concrete_green"
+                }
+            },
+            "red": {
+                "textures": {
+                    "all": "minecraft:blocks/concrete_red"
+                }
+            },
+            "black": {
+                "textures": {
+                    "all": "minecraft:blocks/concrete_black"
+                }
+            }
+        }
+        
+    }
+}

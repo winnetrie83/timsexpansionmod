@@ -1,0 +1,91 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "minecraft:cube_all"
+    },
+    "variants": {
+        "color": {
+            "white": {
+                "textures": {
+                    "all": "tem:blocks/raw_white_stained_clay_block"
+                }
+            },
+            "orange": {
+                "textures": {
+                    "all": "tem:blocks/raw_orange_stained_clay_block"
+                }
+            },
+            "magenta": {
+                "textures": {
+                    "all": "tem:blocks/raw_magenta_stained_clay_block"
+                }
+            },
+            "light_blue": {
+                "textures": {
+                    "all": "tem:blocks/raw_light_blue_stained_clay_block"
+                }
+            },
+            "yellow": {
+                "textures": {
+                    "all": "tem:blocks/raw_yellow_stained_clay_block"
+                }
+            },
+            "lime": {
+                "textures": {
+                    "all": "tem:blocks/raw_lime_stained_clay_block"
+                }
+            },
+            "pink": {
+                "textures": {
+                    "all": "tem:blocks/raw_pink_stained_clay_block"
+                }
+            },
+            "gray": {
+                "textures": {
+                    "all": "tem:blocks/raw_gray_stained_clay_block"
+                }
+            },
+            "silver": {
+                "textures": {
+                    "all": "tem:blocks/raw_silver_stained_clay_block"
+                }
+            },
+            "cyan": {
+                "textures": {
+                    "all": "tem:blocks/raw_cyan_stained_clay_block"
+                }
+            },
+            "purple": {
+                "textures": {
+                    "all": "tem:blocks/raw_purple_stained_clay_block"
+                }
+            },
+            "blue": {
+                "textures": {
+                    "all": "tem:blocks/raw_blue_stained_clay_block"
+                }
+            },
+            "brown": {
+                "textures": {
+                    "all": "tem:blocks/raw_brown_stained_clay_block"
+                }
+            },
+            "green": {
+                "textures": {
+                    "all": "tem:blocks/raw_green_stained_clay_block"
+                }
+            },
+            "red": {
+                "textures": {
+                    "all": "tem:blocks/raw_red_stained_clay_block"
+                }
+            },
+            "black": {
+                "textures": {
+                    "all": "tem:blocks/raw_black_stained_clay_block"
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,91 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "tem:generated"
+    },
+    "variants": {
+        "color": {
+            "white": {
+                "textures": {
+                    "layer0": "tem:items/white_stained_clay_ball"
+                }
+            },
+            "orange": {
+                "textures": {
+                    "layer0": "tem:items/orange_stained_clay_ball"
+                }
+            },
+            "magenta": {
+                "textures": {
+                    "layer0": "tem:items/magenta_stained_clay_ball"
+                }
+            },
+            "light_blue": {
+                "textures": {
+                    "layer0": "tem:items/light_blue_stained_clay_ball"
+                }
+            },
+            "yellow": {
+                "textures": {
+                    "layer0": "tem:items/yellow_stained_clay_ball"
+                }
+            },
+            "lime": {
+                "textures": {
+                    "layer0": "tem:items/lime_stained_clay_ball"
+                }
+            },
+            "pink": {
+                "textures": {
+                    "layer0": "tem:items/pink_stained_clay_ball"
+                }
+            },
+            "gray": {
+                "textures": {
+                    "layer0": "tem:items/gray_stained_clay_ball"
+                }
+            },
+            "silver": {
+                "textures": {
+                    "layer0": "tem:items/silver_stained_clay_ball"
+                }
+            },
+            "cyan": {
+                "textures": {
+                    "layer0": "tem:items/cyan_stained_clay_ball"
+                }
+            },
+            "purple": {
+                "textures": {
+                    "layer0": "tem:items/purple_stained_clay_ball"
+                }
+            },
+            "blue": {
+                "textures": {
+                    "layer0": "tem:items/blue_stained_clay_ball"
+                }
+            },
+            "brown": {
+                "textures": {
+                    "layer0": "tem:items/brown_stained_clay_ball"
+                }
+            },
+            "green": {
+                "textures": {
+                    "layer0": "tem:items/green_stained_clay_ball"
+                }
+            },
+            "red": {
+                "textures": {
+                    "layer0": "tem:items/red_stained_clay_ball"
+                }
+            },
+            "black": {
+                "textures": {
+                    "layer0": "tem:items/black_stained_clay_ball"
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,66 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "top": "#all",
+            "bottom": "#all",
+            "side": "#all"
+        }
+    },
+    "variants": {
+        "half": {
+            "bottom": {
+                "model": "minecraft:half_slab"
+            },
+            "top": {
+                "model": "minecraft:upper_slab"
+            }
+        },
+        
+
+        "color": {
+            "white": {
+                "textures": {
+                    "all": "tem:blocks/bricks_white"
+                }
+            },
+            "orange": {
+                "textures": {
+                    "all": "tem:blocks/bricks_orange"                    
+                }
+            },
+            "magenta": {
+                "textures": {
+                    "all": "tem:blocks/bricks_magenta"
+                }
+            },
+            "light_blue": {
+                "textures": {
+                    "all": "tem:blocks/bricks_light_blue"
+                }
+            },
+            "yellow": {
+                "textures": {
+                    "all": "tem:blocks/bricks_yellow"
+                }
+            },
+            "lime": {
+                "textures": {
+                    "all": "tem:blocks/bricks_lime"
+                }
+            },
+            "pink": {
+                "textures": {
+                    "all": "tem:blocks/bricks_pink"
+                }
+            },
+            "gray": {
+                "textures": {
+                    "all": "tem:blocks/bricks_gray"
+                }
+            }
+        }
+        
+    }
+}
+
