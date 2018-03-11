@@ -8,6 +8,7 @@ import com.winnetrie.timsexpansionmod.util.BlockMapColors;
 import com.winnetrie.timsexpansionmod.util.IHasModel;
 import com.winnetrie.timsexpansionmod.util.IMetaBlock;
 
+import net.minecraft.block.BlockStone;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
@@ -16,6 +17,7 @@ import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IStringSerializable;
@@ -23,11 +25,11 @@ import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class LimeStoneBlock extends BlockBaseMetaUniversal implements IHasModel, IMetaBlock{
-
-	public static final PropertyEnum<LimeStoneBlock.EnumType> VARIANT = PropertyEnum.<LimeStoneBlock.EnumType>create("variant", LimeStoneBlock.EnumType.class);
+public class LimeStoneCobble extends BlockBaseMetaUniversal implements IHasModel, IMetaBlock{
 	
-	public LimeStoneBlock(String name, Material material) {
+	public static final PropertyEnum<LimeStoneCobble.EnumType> VARIANT = PropertyEnum.<LimeStoneCobble.EnumType>create("variant", LimeStoneCobble.EnumType.class);
+
+	public LimeStoneCobble(String name, Material material) {
 		super(name, material);
 		
 		setSoundType(SoundType.STONE);
@@ -36,18 +38,15 @@ public class LimeStoneBlock extends BlockBaseMetaUniversal implements IHasModel,
 		setLightLevel(0.0F);
 		
 		
-		this.setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, LimeStoneBlock.EnumType.RAW));
+		this.setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, LimeStoneCobble.EnumType.NORMAL));
 		
 	}
 
 	@Override
 	public void registerModels() {
 		
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "variant=raw");
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 1, "variant=brick");
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 2, "variant=mossy_brick");
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 3, "variant=cracked");
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 4, "variant=carved");
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "variant=normal");
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 1, "variant=mossy");
 		
 		
 	}
@@ -58,7 +57,7 @@ public class LimeStoneBlock extends BlockBaseMetaUniversal implements IHasModel,
     @Override
     public MapColor getMapColor(IBlockState state, IBlockAccess worldIn, BlockPos pos)
     {
-        return ((LimeStoneBlock.EnumType)state.getValue(VARIANT)).getMapColor();
+        return ((LimeStoneCobble.EnumType)state.getValue(VARIANT)).getMapColor();
     	
     	//return BlockMapColors.LIME;
     }
@@ -69,7 +68,7 @@ public class LimeStoneBlock extends BlockBaseMetaUniversal implements IHasModel,
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return state.getValue(VARIANT).getMetadata() == 0 ? (new ItemStack(BlockInit.LIMESTONE_COBBLE, 1, 0)).getItem() : Item.getItemFromBlock(this);
+        return Item.getItemFromBlock(this);//state.getValue(VARIANT) == CobbleStoneBlock.EnumType.LIMESTONE_COBBLE ? (new ItemStack(BlockInit.BRICKS_COLORED,1,0)).getItem() : Item.getItemFromBlock(Blocks.STONE);
     }
 
     /**
@@ -79,7 +78,7 @@ public class LimeStoneBlock extends BlockBaseMetaUniversal implements IHasModel,
     @Override
     public int damageDropped(IBlockState state)
     {
-        return ((LimeStoneBlock.EnumType)state.getValue(VARIANT)).getMetadata();
+        return ((LimeStoneCobble.EnumType)state.getValue(VARIANT)).getMetadata();
     }
 
     /**
@@ -88,7 +87,7 @@ public class LimeStoneBlock extends BlockBaseMetaUniversal implements IHasModel,
     @Override
     public void getSubBlocks(CreativeTabs itemIn, NonNullList<ItemStack> items)
     {
-        for (LimeStoneBlock.EnumType enumtype : LimeStoneBlock.EnumType.values())
+        for (LimeStoneCobble.EnumType enumtype : LimeStoneCobble.EnumType.values())
         {
             items.add(new ItemStack(this, 1, enumtype.getMetadata()));
         }
@@ -100,7 +99,7 @@ public class LimeStoneBlock extends BlockBaseMetaUniversal implements IHasModel,
     @Override
     public IBlockState getStateFromMeta(int meta)
     {
-        return this.getDefaultState().withProperty(VARIANT, LimeStoneBlock.EnumType.byMetadata(meta));
+        return this.getDefaultState().withProperty(VARIANT, LimeStoneCobble.EnumType.byMetadata(meta));
     }
 
     /**
@@ -109,7 +108,7 @@ public class LimeStoneBlock extends BlockBaseMetaUniversal implements IHasModel,
     @Override
     public int getMetaFromState(IBlockState state)
     {
-        return ((LimeStoneBlock.EnumType)state.getValue(VARIANT)).getMetadata();
+        return ((LimeStoneCobble.EnumType)state.getValue(VARIANT)).getMetadata();
     }
 
     @Override
@@ -120,14 +119,12 @@ public class LimeStoneBlock extends BlockBaseMetaUniversal implements IHasModel,
 
     public static enum EnumType implements IStringSerializable
     {
-        RAW(0, BlockMapColors.LIME, "raw"),
-        BRICK(1, BlockMapColors.LIME, "brick"),
-        MOSSY_BRICK(2, BlockMapColors.LIME, "mossy_brick"),
-        CRACKED(3, BlockMapColors.LIME, "cracked"),
-        CARVED(4, BlockMapColors.LIME, "carved");
+        NORMAL(0, BlockMapColors.LIME, "normal"),
+        MOSSY(1, BlockMapColors.LIME, "mossy");
+        
 
         /** Array of the Block's BlockStates */
-        private static final LimeStoneBlock.EnumType[] META_LOOKUP = new LimeStoneBlock.EnumType[values().length];
+        private static final LimeStoneCobble.EnumType[] META_LOOKUP = new LimeStoneCobble.EnumType[values().length];
         /** The BlockState's metadata. */
         private final int meta;
         /** The EnumType's name. */
@@ -171,7 +168,7 @@ public class LimeStoneBlock extends BlockBaseMetaUniversal implements IHasModel,
         /**
          * Returns an EnumType for the BlockState from a metadata value.
          */
-        public static LimeStoneBlock.EnumType byMetadata(int meta)
+        public static LimeStoneCobble.EnumType byMetadata(int meta)
         {
             if (meta < 0 || meta >= META_LOOKUP.length)
             {
@@ -194,7 +191,7 @@ public class LimeStoneBlock extends BlockBaseMetaUniversal implements IHasModel,
 
         static
         {
-            for (LimeStoneBlock.EnumType enumtype : values())
+            for (LimeStoneCobble.EnumType enumtype : values())
             {
                 META_LOOKUP[enumtype.getMetadata()] = enumtype;
             }
@@ -204,8 +201,7 @@ public class LimeStoneBlock extends BlockBaseMetaUniversal implements IHasModel,
 	@Override
 	public String getSpecialName(ItemStack stack) {
 		
-		return LimeStoneBlock.EnumType.values()[stack.getMetadata()].name().toLowerCase();
+		return LimeStoneCobble.EnumType.values()[stack.getMetadata()].name().toLowerCase();
 	}
-
 
 }

@@ -10,10 +10,12 @@ import com.winnetrie.timsexpansionmod.Main;
 import com.winnetrie.timsexpansionmod.init.BlockInit;
 import com.winnetrie.timsexpansionmod.init.ItemInit;
 import com.winnetrie.timsexpansionmod.util.IHasModel;
+import com.winnetrie.timsexpansionmod.util.Reference;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.BlockStairs;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockStairs.EnumHalf;
 import net.minecraft.block.BlockStairs.EnumShape;
 import net.minecraft.block.material.MapColor;
@@ -30,6 +32,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.BlockRenderLayer;
@@ -59,20 +62,22 @@ public class BlockBaseStairs extends BlockStairs implements IHasModel{
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(HALF, BlockStairs.EnumHalf.BOTTOM).withProperty(SHAPE, BlockStairs.EnumShape.STRAIGHT));
         this.modelBlock = modelState.getBlock();
         //this.modelState = modelState;
-        this.setHardness(this.modelBlock.getBlockHardness(modelState, null, null));
-        this.setResistance(this.modelBlock.getExplosionResistance(null) / 3.0F);
-        this.setSoundType(this.modelBlock.getSoundType());
+        
+        
+        this.setSoundType(SoundType.STONE);
         this.setHarvestLevel(this.modelBlock.getHarvestTool(modelState), this.modelBlock.getHarvestLevel(modelState));
       	//this.setLightLevel(0.0F);
         this.setLightOpacity(255);
         this.useNeighborBrightness = true;
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
         setUnlocalizedName(name);
-		setRegistryName(name);
+		setRegistryName(Reference.PREFIX + name);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
+    
+    
     
     @Override
 	public void registerModels() {

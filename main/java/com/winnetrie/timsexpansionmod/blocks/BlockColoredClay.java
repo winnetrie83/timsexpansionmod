@@ -29,12 +29,6 @@ public class BlockColoredClay extends BlockBaseMetaColored implements IMetaBlock
 		super(name, material);
 		setSoundType(SoundType.GROUND);
 		setHardness(0.6F);
-		//setResistance(30.0F);
-		//setHarvestLevel("pickaxe", 1);
-		//setLightLevel(0.0F);
-		//useNeighborBrightness = true;
-		//setLightOpacity(0);
-		//setBlockUnbreakable();
 		
 		this.setDefaultState(this.blockState.getBaseState().withProperty(COLOR, EnumDyeColor.WHITE));
 		

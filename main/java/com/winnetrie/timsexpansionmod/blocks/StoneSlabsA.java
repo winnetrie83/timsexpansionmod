@@ -40,30 +40,28 @@ import net.minecraft.world.Explosion;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public abstract class BlockBaseSlabColoredA extends BlockSlab implements IMetaBlock, IHasModel
+public abstract class StoneSlabsA extends BlockSlab implements IMetaBlock, IHasModel
 {
-    public static final PropertyEnum<BlockBaseSlabColoredA.EnumType> COLOR = PropertyEnum.<BlockBaseSlabColoredA.EnumType>create("color", BlockBaseSlabColoredA.EnumType.class);
+    public static final PropertyEnum<StoneSlabsA.EnumType> VARIANT = PropertyEnum.<StoneSlabsA.EnumType>create("variant", StoneSlabsA.EnumType.class);
     
-    private final Block modelBlock;
-    private final IBlockState modelState;
+    
     
 
-    public BlockBaseSlabColoredA(String name, IBlockState state)
+    public StoneSlabsA(String name, Material material)
     {
-        super(state.getMaterial());
-        this.modelBlock = state.getBlock();
-        this.modelState = state;
-        IBlockState iblockstate = this.blockState.getBaseState().withProperty(COLOR, BlockBaseSlabColoredA.EnumType.WHITE);   
+        super(material);
+        IBlockState iblockstate = this.blockState.getBaseState().withProperty(VARIANT, StoneSlabsA.EnumType.LIMESTONE_RAW);   
         if(!this.isDouble()){
 
-        	iblockstate = iblockstate.withProperty(HALF, EnumBlockHalf.BOTTOM).withProperty(COLOR, BlockBaseSlabColoredA.EnumType.WHITE);
+        	iblockstate = iblockstate.withProperty(HALF, EnumBlockHalf.BOTTOM).withProperty(VARIANT, StoneSlabsA.EnumType.LIMESTONE_RAW);
 		}
 
         this.setDefaultState(iblockstate);
         setUnlocalizedName(name);
 		setRegistryName(Reference.PREFIX + name);
 		setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
-        setHarvestLevel(this.modelBlock.getHarvestTool(state), this.modelBlock.getHarvestLevel(state));
+		this.setHarvestLevel("pickaxe", 0);
+        setResistance(5.0F);
         setSoundType(SoundType.STONE);
 		setLightLevel(0.0F);
 		this.useNeighborBrightness = true;
@@ -71,18 +69,50 @@ public abstract class BlockBaseSlabColoredA extends BlockSlab implements IMetaBl
 		BlockInit.BLOCKS.add(this);
 
     }
+    
+    @Override
+    public float getBlockHardness(IBlockState blockState, World worldIn, BlockPos pos){
+    	
+    	
+    	float hardness = 0.0F;
+    	if ((blockState.getBlock() != Blocks.AIR) && (blockState.getBlock() != null) && (blockState.getBlock() instanceof StoneSlabsA)) {
+    		
+    		switch(getMetaFromState(blockState)) {
+    		
+    		case 0 : hardness = 1.5F; break;
+    		case 1 : hardness = 1.75F; break;
+    		case 2 : hardness = 1.75F; break;
+    		case 3 : hardness = 2.00F; break;
+    		case 4 : hardness = 1.5F; break;
+    		case 5 : hardness = 1.75F; break;
+    		case 6 : hardness = 0.0F; break;
+    		case 7 : hardness = 0.0F; break;
+    		case 8 : hardness = 1.5F; break;
+    		case 9 : hardness = 1.75F; break;
+    		case 10 : hardness = 1.75F; break;
+    		case 11 : hardness = 2.00F; break;
+    		case 12 : hardness = 1.5F; break;
+    		case 13 : hardness = 1.75F; break;
+    		case 14 : hardness = 0.0F;  break;
+    		case 15 : hardness = 0.0F; break;
+    		
+    		}
+    		
+    	}	
+        return hardness;
+    }
+    
+    
     @Override
     public void registerModels() {
 		
     	if (!isDouble()) {
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "color=white,half=bottom");
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 1, "color=orange,half=bottom");
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 2, "color=magenta,half=bottom");
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 3, "color=light_blue,half=bottom");
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 4, "color=yellow,half=bottom");
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 5, "color=lime,half=bottom");
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 6, "color=pink,half=bottom");
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 7, "color=gray,half=bottom");
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "half=bottom,variant=limestone_raw");
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 1, "half=bottom,variant=marblestone_raw");
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 2, "half=bottom,variant=limestone_cobble");
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 3, "half=bottom,variant=marblestone_cobble");
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 4, "half=bottom,variant=limestone_brick");
+		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 5, "half=bottom,variant=marblestone_brick");
     	}
 		
 	}
@@ -102,7 +132,7 @@ public abstract class BlockBaseSlabColoredA extends BlockSlab implements IMetaBl
     @Override
     public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
     {
-        return new ItemStack(this.getHalfSlabReference(), 1, ((BlockBaseSlabColoredA.EnumType)state.getValue(COLOR)).getMetadata());
+        return new ItemStack(this.getHalfSlabReference(), 1, ((StoneSlabsA.EnumType)state.getValue(VARIANT)).getMetadata());
     }
 
     /**
@@ -111,19 +141,19 @@ public abstract class BlockBaseSlabColoredA extends BlockSlab implements IMetaBl
     @Override
     public String getUnlocalizedName(int meta)
     {
-        return super.getUnlocalizedName() + "." + BlockBaseSlabColoredA.EnumType.byMetadata(meta).getUnlocalizedName();
+        return super.getUnlocalizedName() + "." + StoneSlabsA.EnumType.byMetadata(meta).getUnlocalizedName();
     }
 
     @Override
     public IProperty<?> getVariantProperty()
     {
-        return COLOR;
+        return VARIANT;
     }
 
     @Override
     public Comparable<?> getTypeForItem(ItemStack stack)
     {
-        return BlockBaseSlabColoredA.EnumType.byMetadata(stack.getMetadata() & 7);
+        return StoneSlabsA.EnumType.byMetadata(stack.getMetadata() & 7);
     }
 
     /**
@@ -132,7 +162,7 @@ public abstract class BlockBaseSlabColoredA extends BlockSlab implements IMetaBl
     @Override
     public void getSubBlocks(CreativeTabs itemIn, NonNullList<ItemStack> items)
     {
-        for (BlockBaseSlabColoredA.EnumType blockstoneslab$enumtype : BlockBaseSlabColoredA.EnumType.values())
+        for (StoneSlabsA.EnumType blockstoneslab$enumtype : StoneSlabsA.EnumType.values())
         {
         	items.add(new ItemStack(this, 1, blockstoneslab$enumtype.getMetadata()));
         }
@@ -144,7 +174,7 @@ public abstract class BlockBaseSlabColoredA extends BlockSlab implements IMetaBl
     @Override
     public IBlockState getStateFromMeta(int meta)
     {
-        IBlockState iblockstate = this.getDefaultState().withProperty(COLOR, BlockBaseSlabColoredA.EnumType.values()[meta & 7]);
+        IBlockState iblockstate = this.getDefaultState().withProperty(VARIANT, StoneSlabsA.EnumType.values()[meta & 7]);
 
         if (!this.isDouble())
 
@@ -158,7 +188,7 @@ public abstract class BlockBaseSlabColoredA extends BlockSlab implements IMetaBl
     @Override
     public int getMetaFromState(IBlockState state)
     {
-        int i = state.getValue(COLOR).getMetadata();
+        int i = state.getValue(VARIANT).getMetadata();
         if (!this.isDouble() && state.getValue(HALF) == BlockSlab.EnumBlockHalf.TOP)
         {
             i |= 8;
@@ -169,7 +199,7 @@ public abstract class BlockBaseSlabColoredA extends BlockSlab implements IMetaBl
     @Override
     protected BlockStateContainer createBlockState()
     {
-        return this.isDouble() ? new BlockStateContainer(this, new IProperty[] { COLOR}) : new BlockStateContainer(this, new IProperty[] {HALF, COLOR});
+        return this.isDouble() ? new BlockStateContainer(this, new IProperty[] { VARIANT}) : new BlockStateContainer(this, new IProperty[] {HALF, VARIANT});
     }
 
     /**
@@ -179,7 +209,7 @@ public abstract class BlockBaseSlabColoredA extends BlockSlab implements IMetaBl
     @Override
     public int damageDropped(IBlockState state)
     {
-        return ((BlockBaseSlabColoredA.EnumType)state.getValue(COLOR)).getMetadata();
+        return ((StoneSlabsA.EnumType)state.getValue(VARIANT)).getMetadata();
     }
 
     /**
@@ -189,19 +219,21 @@ public abstract class BlockBaseSlabColoredA extends BlockSlab implements IMetaBl
     public MapColor getMapColor(IBlockState state, IBlockAccess worldIn, BlockPos pos)
     {
         
-    	MapColor mapcolor;
+    	MapColor mapcolor = null;
     	int meta = getMetaFromState(state);
     	if (meta > 7) {
     		meta = meta-8;
+    		if ((meta == 0) || (meta == 2) || (meta == 4) ) {
+    			
+    			mapcolor = BlockMapColors.LIME;
+    		}
+    		else if ((meta == 1) || (meta == 3) || (meta == 5) ) {
+    			
+    			mapcolor = BlockMapColors.MARBLE;
+    		}
+    		else {mapcolor = MapColor.BLACK;}
     	}
-        if (this.modelState.getBlock() instanceof BlockStainedHardenedClay || this.modelState.getBlock() instanceof BrickedTerracottaBlock || this.modelState.getBlock() instanceof TerracottaBlock) {
-        	
-        	mapcolor = BlockMapColors.TerracottaColors.byMetadata(meta).getMapColor();
-        }
-        else {
-        	mapcolor = BlockMapColors.ConcreteColors.byMetadata(meta).getMapColor();
-        }
-    	//return this.modelState.getMapColor(worldIn, pos);
+        
     	return mapcolor;
     }
 
@@ -214,16 +246,14 @@ public abstract class BlockBaseSlabColoredA extends BlockSlab implements IMetaBl
     
     public static enum EnumType implements IStringSerializable
     {
-        WHITE(0,  "white", "white"),
-        ORANGE(1,  "orange", "orange"),
-        MAGENTA(2,  "magenta", "magenta"),
-        LIGHT_BLUE(3,  "light_blue", "light_blue"),
-        YELLOW(4,  "yellow", "yellow"),
-        LIME(5,  "lime", "lime"),
-        PINK(6,  "pink", "pink"),
-        GRAY(7,  "gray", "gray");
+        LIMESTONE_RAW(0,  "limestone_raw", "limestone_raw"),
+        MARBLESTONE_RAW(1,  "marblestone_raw", "marblestone_raw"),
+        LIMESTONE_COBBLE(2,  "limestone_cobble", "limestone_cobble"),
+        MARBLESTONE_COBBLE(3,  "marblestone_cobble", "marblestone_cobble"),
+        LIMESTONE_BRICK(4,  "limestone_brick", "limestone_brick"),
+        MARBLESTONE_BRICK(5,  "marblestone_brick", "marblestone_brick");
 
-        private static final BlockBaseSlabColoredA.EnumType[] META_LOOKUP = new BlockBaseSlabColoredA.EnumType[values().length];
+        private static final StoneSlabsA.EnumType[] META_LOOKUP = new StoneSlabsA.EnumType[values().length];
         private final int meta;
         private final String name;
         private final String unlocalizedName;
@@ -252,7 +282,7 @@ public abstract class BlockBaseSlabColoredA extends BlockSlab implements IMetaBl
             return this.name;
         }
 
-        public static BlockBaseSlabColoredA.EnumType byMetadata(int meta)
+        public static StoneSlabsA.EnumType byMetadata(int meta)
         {
             if (meta < 0 || meta >= META_LOOKUP.length)
             {
@@ -274,7 +304,7 @@ public abstract class BlockBaseSlabColoredA extends BlockSlab implements IMetaBl
 
         static
         {
-            for (BlockBaseSlabColoredA.EnumType blockstoneslab$enumtype : values())
+            for (StoneSlabsA.EnumType blockstoneslab$enumtype : values())
             {
                 META_LOOKUP[blockstoneslab$enumtype.getMetadata()] = blockstoneslab$enumtype;
             }

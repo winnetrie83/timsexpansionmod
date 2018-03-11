@@ -17,39 +17,36 @@ import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class BrickedTerracottaBlock extends BlockBaseMetaColored implements IMetaBlock{
+public class TerracottaBlock extends BlockBaseMetaColored implements IMetaBlock{
 	
 	public static final PropertyEnum<EnumDyeColor> COLOR = PropertyEnum.<EnumDyeColor>create("color", EnumDyeColor.class);
-	private static final MapColor[] MAP_COLORS = new MapColor[] {
-			 MapColor.WHITE_STAINED_HARDENED_CLAY, 
-			 MapColor.ORANGE_STAINED_HARDENED_CLAY, 
-			 MapColor.MAGENTA_STAINED_HARDENED_CLAY, 
-			 MapColor.LIGHT_BLUE_STAINED_HARDENED_CLAY, 
-			 MapColor.YELLOW_STAINED_HARDENED_CLAY, 
-			 MapColor.LIME_STAINED_HARDENED_CLAY, 
-			 MapColor.PINK_STAINED_HARDENED_CLAY, 
-			 MapColor.GRAY_STAINED_HARDENED_CLAY, 
-			 MapColor.SILVER_STAINED_HARDENED_CLAY, 
-			 MapColor.CYAN_STAINED_HARDENED_CLAY, 
-			 MapColor.PURPLE_STAINED_HARDENED_CLAY, 
-			 MapColor.BLUE_STAINED_HARDENED_CLAY, 
-			 MapColor.BROWN_STAINED_HARDENED_CLAY, 
-			 MapColor.GREEN_STAINED_HARDENED_CLAY, 
-			 MapColor.RED_STAINED_HARDENED_CLAY, 
-			 MapColor.BLACK_STAINED_HARDENED_CLAY};
+	private static final MapColor[] MAP_COLORS = new MapColor[] {MapColor.WHITE_STAINED_HARDENED_CLAY, 
+																 MapColor.ORANGE_STAINED_HARDENED_CLAY, 
+																 MapColor.MAGENTA_STAINED_HARDENED_CLAY, 
+																 MapColor.LIGHT_BLUE_STAINED_HARDENED_CLAY, 
+																 MapColor.YELLOW_STAINED_HARDENED_CLAY, 
+																 MapColor.LIME_STAINED_HARDENED_CLAY, 
+																 MapColor.PINK_STAINED_HARDENED_CLAY, 
+																 MapColor.GRAY_STAINED_HARDENED_CLAY, 
+																 MapColor.SILVER_STAINED_HARDENED_CLAY, 
+																 MapColor.CYAN_STAINED_HARDENED_CLAY, 
+																 MapColor.PURPLE_STAINED_HARDENED_CLAY, 
+																 MapColor.BLUE_STAINED_HARDENED_CLAY, 
+																 MapColor.BROWN_STAINED_HARDENED_CLAY, 
+																 MapColor.GREEN_STAINED_HARDENED_CLAY, 
+																 MapColor.RED_STAINED_HARDENED_CLAY, 
+																 MapColor.BLACK_STAINED_HARDENED_CLAY};
 	
 	private final Block modelBlock;
+    
 	
-	public BrickedTerracottaBlock(String name, IBlockState modelState) {
+	public TerracottaBlock(String name, IBlockState modelState) {
 		super(name, modelState.getMaterial());
 		
 		this.modelBlock = modelState.getBlock();
-        this.setSoundType(SoundType.STONE);
+		this.setSoundType(SoundType.STONE);
         this.setHarvestLevel(this.modelBlock.getHarvestTool(modelState), this.modelBlock.getHarvestLevel(modelState));
 		setLightLevel(0.0F);
-		//useNeighborBrightness = true;
-		//setLightOpacity(0);
-		//setBlockUnbreakable();
 		
 		this.setDefaultState(this.blockState.getBaseState().withProperty(COLOR, EnumDyeColor.WHITE));
 	}
