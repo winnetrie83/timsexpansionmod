@@ -1,0 +1,239 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "tem:dummy",
+        "textures": {
+            "particle": "#wall"
+        }    
+    },
+    
+    "variants": {
+        "up": {
+            "true": {
+                "submodel": {"wall_up": {"model": "wall_post"}}
+            },
+            "false": {}
+        },
+        "north": {
+            "true": {
+                "submodel": {"wall_north": {"model": "wall_side","uvlock": true}}
+            },
+            "false": {}
+        },
+        "east": {
+            "true": {
+                "submodel": {"wall_east": {"model": "wall_side","y": 90,"uvlock": true}}
+            },
+            "false": {}
+        },
+        "south": {
+            "true": {
+                "submodel": {"wall_south": {"model": "wall_side","y": 180,"uvlock": true}}
+            },
+            "false": {}
+        },
+        "west": {
+            "true": {
+                "submodel": {"wall_west": {"model": "wall_side","y": 270,"uvlock": true}}
+            },
+            "false": {}
+        },
+        
+        "color": {
+            "white": {
+                "textures": {
+                    "wall": "tem:blocks/bricks_white"
+                }
+            },
+            "orange": {
+                "textures": {
+                    "wall": "tem:blocks/bricks_orange"
+                }
+            },
+            "magenta": {
+                "textures": {
+                    "wall": "tem:blocks/bricks_magenta"
+                }
+            },
+            "light_blue": {
+                "textures": {
+                    "wall": "tem:blocks/bricks_light_blue"
+                }
+            },
+            "yellow": {
+                "textures": {
+                    "wall": "tem:blocks/bricks_yellow"
+                }
+            },
+            "lime": {
+                "textures": {
+                    "wall": "tem:blocks/bricks_lime"
+                }
+            },
+            "pink": {
+                "textures": {
+                    "wall": "tem:blocks/bricks_pink"
+                }
+            },
+            "gray": {
+                "textures": {
+                    "wall": "tem:blocks/bricks_gray"
+                }
+            },
+            "silver": {
+                "textures": {
+                    "wall": "tem:blocks/bricks_silver"
+                }
+            },
+            "cyan": {
+                "textures": {
+                    "wall": "tem:blocks/bricks_cyan"
+                }
+            },
+            "purple": {
+                "textures": {
+                    "wall": "tem:blocks/bricks_purple"
+                }
+            },
+            "blue": {
+                "textures": {
+                    "wall": "tem:blocks/bricks_blue"
+                }
+            },
+            "brown": {
+                "textures": {
+                    "wall": "tem:blocks/bricks_brown"
+                }
+            },
+            "green": {
+                "textures": {
+                    "wall": "tem:blocks/bricks_green"
+                }
+            },
+            "red": {
+                "textures": {
+                    "wall": "tem:blocks/bricks_red"
+                }
+            },
+            "black": {
+                "textures": {
+                    "wall": "tem:blocks/bricks_black"
+                }
+            }
+        },
+        "color=white": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/bricks_white"
+                
+            }
+        
+        },
+        "color=orange": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/bricks_orange"
+                
+            }
+        },
+        "color=magenta": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/bricks_magenta"
+                
+            }
+        },
+        "color=light_blue": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/bricks_light_blue"
+                
+            }
+        },
+        "color=yellow": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/bricks_yellow"
+                
+            }
+        },
+        "color=lime": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/bricks_lime"
+                
+            }
+        },
+        "color=pink": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/bricks_pink"
+                
+            }
+        },
+        "color=gray": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/bricks_gray"
+                
+            }
+        },
+        "color=silver": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/bricks_silver"
+                
+            }
+        },
+        "color=cyan": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/bricks_cyan"
+                
+            }
+        },
+        "color=purple": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/bricks_purple"
+                
+            }
+        },
+        "color=blue": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/bricks_blue"
+                
+            }
+        },
+        "color=brown": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/bricks_brown"
+                
+            }
+        },
+        "color=green": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/bricks_green"
+                
+            }
+        },
+        "color=red": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/bricks_red"
+                
+            }
+        },
+        "color=black": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/bricks_black"
+                
+            }
+        }
+    }
+}
+
