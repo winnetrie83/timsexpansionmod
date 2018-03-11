@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "tem:demonite_wall",
+    "data": 0,
+    "count": 6
+  },
+  "pattern": [
+    "BBB",
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "tem:demonite",
+      "data": 1
+    }
+  }
+}

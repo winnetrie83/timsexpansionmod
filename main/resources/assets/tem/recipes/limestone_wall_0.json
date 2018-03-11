@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "tem:limestone_wall",
+    "data": 0,
+    "count": 6
+  },
+  "pattern": [
+    "BBB",
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "tem:limestone_cobble",
+      "data": 0
+    }
+  }
+}
