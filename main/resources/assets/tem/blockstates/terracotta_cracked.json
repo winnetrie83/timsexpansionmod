@@ -1,0 +1,91 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "minecraft:cube_all"
+    },
+    "variants": {
+        "color": {
+            "white": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_white_cracked"
+                }
+            },
+            "orange": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_orange_cracked"
+                }
+            },
+            "magenta": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_magenta_cracked"
+                }
+            },
+            "light_blue": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_light_blue_cracked"
+                }
+            },
+            "yellow": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_yellow_cracked"
+                }
+            },
+            "lime": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_lime_cracked"
+                }
+            },
+            "pink": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_pink_cracked"
+                }
+            },
+            "gray": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_gray_cracked"
+                }
+            },
+            "silver": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_silver_cracked"
+                }
+            },
+            "cyan": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_cyan_cracked"
+                }
+            },
+            "purple": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_purple_cracked"
+                }
+            },
+            "blue": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_blue_cracked"
+                }
+            },
+            "brown": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_brown_cracked"
+                }
+            },
+            "green": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_green_cracked"
+                }
+            },
+            "red": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_red_cracked"
+                }
+            },
+            "black": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_black_cracked"
+                }
+            }
+        }
+    }
+}
+

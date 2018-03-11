@@ -1,0 +1,239 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "tem:dummy",
+        "textures": {
+            "particle": "#wall"
+        }    
+    },
+    
+    "variants": {
+        "up": {
+            "true": {
+                "submodel": {"wall_up": {"model": "wall_post"}}
+            },
+            "false": {}
+        },
+        "north": {
+            "true": {
+                "submodel": {"wall_north": {"model": "wall_side","uvlock": true}}
+            },
+            "false": {}
+        },
+        "east": {
+            "true": {
+                "submodel": {"wall_east": {"model": "wall_side","y": 90,"uvlock": true}}
+            },
+            "false": {}
+        },
+        "south": {
+            "true": {
+                "submodel": {"wall_south": {"model": "wall_side","y": 180,"uvlock": true}}
+            },
+            "false": {}
+        },
+        "west": {
+            "true": {
+                "submodel": {"wall_west": {"model": "wall_side","y": 270,"uvlock": true}}
+            },
+            "false": {}
+        },
+        
+        "color": {
+            "white": {
+                "textures": {
+                    "wall": "tem:blocks/terracotta_white_brick"
+                }
+            },
+            "orange": {
+                "textures": {
+                    "wall": "tem:blocks/terracotta_orange_brick"
+                }
+            },
+            "magenta": {
+                "textures": {
+                    "wall": "tem:blocks/terracotta_magenta_brick"
+                }
+            },
+            "light_blue": {
+                "textures": {
+                    "wall": "tem:blocks/terracotta_light_blue_brick"
+                }
+            },
+            "yellow": {
+                "textures": {
+                    "wall": "tem:blocks/terracotta_yellow_brick"
+                }
+            },
+            "lime": {
+                "textures": {
+                    "wall": "tem:blocks/terracotta_lime_brick"
+                }
+            },
+            "pink": {
+                "textures": {
+                    "wall": "tem:blocks/terracotta_pink_brick"
+                }
+            },
+            "gray": {
+                "textures": {
+                    "wall": "tem:blocks/terracotta_gray_brick"
+                }
+            },
+            "silver": {
+                "textures": {
+                    "wall": "tem:blocks/terracotta_silver_brick"
+                }
+            },
+            "cyan": {
+                "textures": {
+                    "wall": "tem:blocks/terracotta_cyan_brick"
+                }
+            },
+            "purple": {
+                "textures": {
+                    "wall": "tem:blocks/terracotta_purple_brick"
+                }
+            },
+            "blue": {
+                "textures": {
+                    "wall": "tem:blocks/terracotta_blue_brick"
+                }
+            },
+            "brown": {
+                "textures": {
+                    "wall": "tem:blocks/terracotta_brown_brick"
+                }
+            },
+            "green": {
+                "textures": {
+                    "wall": "tem:blocks/terracotta_green_brick"
+                }
+            },
+            "red": {
+                "textures": {
+                    "wall": "tem:blocks/terracotta_red_brick"
+                }
+            },
+            "black": {
+                "textures": {
+                    "wall": "tem:blocks/terracotta_black_brick"
+                }
+            }
+        },
+        "color=white": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/terracotta_white_brick"
+                
+            }
+        
+        },
+        "color=orange": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/terracotta_orange_brick"
+                
+            }
+        },
+        "color=magenta": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/terracotta_magenta_brick"
+                
+            }
+        },
+        "color=light_blue": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/terracotta_light_blue_brick"
+                
+            }
+        },
+        "color=yellow": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/terracotta_yellow_brick"
+                
+            }
+        },
+        "color=lime": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/terracotta_lime_brick"
+                
+            }
+        },
+        "color=pink": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/terracotta_pink_brick"
+                
+            }
+        },
+        "color=gray": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/terracotta_gray_brick"
+                
+            }
+        },
+        "color=silver": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/terracotta_silver_brick"
+                
+            }
+        },
+        "color=cyan": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/terracotta_cyan_brick"
+                
+            }
+        },
+        "color=purple": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/terracotta_purple_brick"
+                
+            }
+        },
+        "color=blue": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/terracotta_blue_brick"
+                
+            }
+        },
+        "color=brown": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/terracotta_brown_brick"
+                
+            }
+        },
+        "color=green": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/terracotta_green_brick"
+                
+            }
+        },
+        "color=red": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/terracotta_red_brick"
+                
+            }
+        },
+        "color=black": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "tem:blocks/terracotta_black_brick"
+                
+            }
+        }
+    }
+}
+

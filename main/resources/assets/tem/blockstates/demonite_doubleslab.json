@@ -1,0 +1,23 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "minecraft:cube_column"
+    },
+    "variants": {
+    
+        "variant": {
+            "raw": {
+                "textures": {
+                    "end": "tem:blocks/demonite_smooth_top",
+                    "side": "tem:blocks/demonite_smooth_side"
+                }
+            },
+            "brick": {
+                "textures": {
+                    "end": "tem:blocks/demonite_brick",
+                    "side": "tem:blocks/demonite_brick"
+                }
+            }
+        }    
+    }
+}

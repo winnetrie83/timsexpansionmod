@@ -8,22 +8,27 @@
         "variant": {
             "raw": {
                 "textures": {
-                    "all": "tem:blocks/demonite_raw"
+                    "all": "tem:blocks/marblestone_raw"
                 }
             },
             "brick": {
                 "textures": {
-                    "all": "tem:blocks/demonite_brick"
+                    "all": "tem:blocks/marblestone_brick"
+                }
+            },
+            "mossy_brick": {
+                "textures": {
+                    "all": "tem:blocks/marblestone_brick_mossy"
                 }
             },
             "cracked": {
                 "textures": {
-                    "all": "tem:blocks/demonite_cracked"
+                    "all": "tem:blocks/marblestone_cracked"
                 }
             },
             "carved": {
                 "textures": {
-                    "all": "tem:blocks/demonite_carved"
+                    "all": "tem:blocks/marblestone_carved"
                 }
             }
         }

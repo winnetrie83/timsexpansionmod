@@ -1,0 +1,66 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "top": "#all",
+            "bottom": "#all",
+            "side": "#all"
+        }
+    },
+    "variants": {
+        "half": {
+            "bottom": {
+                "model": "minecraft:half_slab"
+            },
+            "top": {
+                "model": "minecraft:upper_slab"
+            }
+        },
+        
+
+        "color": {
+            "silver": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_silver_brick"
+                }
+            },
+            "cyan": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_cyan_brick"                    
+                }
+            },
+            "purple": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_purple_brick"
+                }
+            },
+            "blue": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_blue_brick"
+                }
+            },
+            "brown": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_brown_brick"
+                }
+            },
+            "green": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_green_brick"
+                }
+            },
+            "red": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_red_brick"
+                }
+            },
+            "black": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_black_brick"
+                }
+            }
+        }
+        
+    }
+}
+

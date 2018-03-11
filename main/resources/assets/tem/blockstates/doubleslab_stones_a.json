@@ -1,0 +1,47 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "minecraft:cube_column"
+    },
+    "variants": {
+    
+        "variant": {
+            "limestone_raw": {
+                "textures": {
+                    "end": "tem:blocks/limestone_smooth_top",
+                    "side": "tem:blocks/limestone_smooth_side"
+                }
+            },
+            "marblestone_raw": {
+                "textures": {
+                    "end": "tem:blocks/marblestone_smooth_top",
+                    "side": "tem:blocks/marblestone_smooth_side"                    
+                }
+            },
+            "limestone_cobble": {
+                "textures": {
+                    "end": "tem:blocks/limestone_cobble",
+                    "side": "tem:blocks/limestone_cobble"
+                }
+            },
+            "marblestone_cobble": {
+                "textures": {
+                    "end": "tem:blocks/marblestone_cobble",
+                    "side": "tem:blocks/marblestone_cobble"
+                }
+            },
+            "limestone_brick": {
+                "textures": {
+                    "end": "tem:blocks/limestone_brick",
+                    "side": "tem:blocks/limestone_brick"
+                }
+            },
+            "marblestone_brick": {
+                "textures": {
+                    "end": "tem:blocks/marblestone_brick",
+                    "side": "tem:blocks/marblestone_brick"
+                }
+            }
+        }    
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "minecraft:cube_all"
+    },
+    "variants": {
+        "color": {
+        
+            "white": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_white_brick"
+                }
+            },
+            "orange": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_orange_brick"
+                }
+            },
+            "magenta": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_magenta_brick"
+                }
+            },
+            "light_blue": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_light_blue_brick"
+                }
+            },
+            "yellow": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_yellow_brick"
+                }
+            },
+            "lime": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_lime_brick"
+                }
+            },
+            "pink": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_pink_brick"
+                }
+            },
+            "gray": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_gray_brick"
+                }
+            }
+        }
+        
+    }
+}

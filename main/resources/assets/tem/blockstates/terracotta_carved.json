@@ -1,0 +1,91 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "minecraft:cube_all"
+    },
+    "variants": {
+        "color": {
+            "white": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_white_carved"
+                }
+            },
+            "orange": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_orange_carved"
+                }
+            },
+            "magenta": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_magenta_carved"
+                }
+            },
+            "light_blue": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_light_blue_carved"
+                }
+            },
+            "yellow": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_yellow_carved"
+                }
+            },
+            "lime": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_lime_carved"
+                }
+            },
+            "pink": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_pink_carved"
+                }
+            },
+            "gray": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_gray_carved"
+                }
+            },
+            "silver": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_silver_carved"
+                }
+            },
+            "cyan": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_cyan_carved"
+                }
+            },
+            "purple": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_purple_carved"
+                }
+            },
+            "blue": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_blue_carved"
+                }
+            },
+            "brown": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_brown_carved"
+                }
+            },
+            "green": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_green_carved"
+                }
+            },
+            "red": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_red_carved"
+                }
+            },
+            "black": {
+                "textures": {
+                    "all": "tem:blocks/terracotta_black_carved"
+                }
+            }
+        }
+    }
+}
+

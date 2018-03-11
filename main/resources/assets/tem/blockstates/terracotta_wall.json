@@ -1,0 +1,239 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "tem:dummy",
+        "textures": {
+            "particle": "#wall"
+        }    
+    },
+    
+    "variants": {
+        "up": {
+            "true": {
+                "submodel": {"wall_up": {"model": "wall_post"}}
+            },
+            "false": {}
+        },
+        "north": {
+            "true": {
+                "submodel": {"wall_north": {"model": "wall_side","uvlock": true}}
+            },
+            "false": {}
+        },
+        "east": {
+            "true": {
+                "submodel": {"wall_east": {"model": "wall_side","y": 90,"uvlock": true}}
+            },
+            "false": {}
+        },
+        "south": {
+            "true": {
+                "submodel": {"wall_south": {"model": "wall_side","y": 180,"uvlock": true}}
+            },
+            "false": {}
+        },
+        "west": {
+            "true": {
+                "submodel": {"wall_west": {"model": "wall_side","y": 270,"uvlock": true}}
+            },
+            "false": {}
+        },
+        
+        "color": {
+            "white": {
+                "textures": {
+                    "wall": "minecraft:blocks/hardened_clay_stained_white"
+                }
+            },
+            "orange": {
+                "textures": {
+                    "wall": "minecraft:blocks/hardened_clay_stained_orange"
+                }
+            },
+            "magenta": {
+                "textures": {
+                    "wall": "minecraft:blocks/hardened_clay_stained_magenta"
+                }
+            },
+            "light_blue": {
+                "textures": {
+                    "wall": "minecraft:blocks/hardened_clay_stained_light_blue"
+                }
+            },
+            "yellow": {
+                "textures": {
+                    "wall": "minecraft:blocks/hardened_clay_stained_yellow"
+                }
+            },
+            "lime": {
+                "textures": {
+                    "wall": "minecraft:blocks/hardened_clay_stained_lime"
+                }
+            },
+            "pink": {
+                "textures": {
+                    "wall": "minecraft:blocks/hardened_clay_stained_pink"
+                }
+            },
+            "gray": {
+                "textures": {
+                    "wall": "minecraft:blocks/hardened_clay_stained_gray"
+                }
+            },
+            "silver": {
+                "textures": {
+                    "wall": "minecraft:blocks/hardened_clay_stained_silver"
+                }
+            },
+            "cyan": {
+                "textures": {
+                    "wall": "minecraft:blocks/hardened_clay_stained_cyan"
+                }
+            },
+            "purple": {
+                "textures": {
+                    "wall": "minecraft:blocks/hardened_clay_stained_purple"
+                }
+            },
+            "blue": {
+                "textures": {
+                    "wall": "minecraft:blocks/hardened_clay_stained_blue"
+                }
+            },
+            "brown": {
+                "textures": {
+                    "wall": "minecraft:blocks/hardened_clay_stained_brown"
+                }
+            },
+            "green": {
+                "textures": {
+                    "wall": "minecraft:blocks/hardened_clay_stained_green"
+                }
+            },
+            "red": {
+                "textures": {
+                    "wall": "minecraft:blocks/hardened_clay_stained_red"
+                }
+            },
+            "black": {
+                "textures": {
+                    "wall": "minecraft:blocks/hardened_clay_stained_black"
+                }
+            }
+        },
+        "color=white": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "minecraft:blocks/hardened_clay_stained_white"
+                
+            }
+        
+        },
+        "color=orange": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "minecraft:blocks/hardened_clay_stained_orange"
+                
+            }
+        },
+        "color=magenta": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "minecraft:blocks/hardened_clay_stained_magenta"
+                
+            }
+        },
+        "color=light_blue": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "minecraft:blocks/hardened_clay_stained_light_blue"
+                
+            }
+        },
+        "color=yellow": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "minecraft:blocks/hardened_clay_stained_yellow"
+                
+            }
+        },
+        "color=lime": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "minecraft:blocks/hardened_clay_stained_lime"
+                
+            }
+        },
+        "color=pink": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "minecraft:blocks/hardened_clay_stained_pink"
+                
+            }
+        },
+        "color=gray": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "minecraft:blocks/hardened_clay_stained_gray"
+                
+            }
+        },
+        "color=silver": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "minecraft:blocks/hardened_clay_stained_silver"
+                
+            }
+        },
+        "color=cyan": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "minecraft:blocks/hardened_clay_stained_cyan"
+                
+            }
+        },
+        "color=purple": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "minecraft:blocks/hardened_clay_stained_purple"
+                
+            }
+        },
+        "color=blue": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "minecraft:blocks/hardened_clay_stained_blue"
+                
+            }
+        },
+        "color=brown": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "minecraft:blocks/hardened_clay_stained_brown"
+                
+            }
+        },
+        "color=green": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "minecraft:blocks/hardened_clay_stained_green"
+                
+            }
+        },
+        "color=red": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "minecraft:blocks/hardened_clay_stained_red"
+                
+            }
+        },
+        "color=black": {
+            "model": "wall_inventory",
+            "textures": {
+                "wall": "minecraft:blocks/hardened_clay_stained_black"
+                
+            }
+        }
+    }
+}
+

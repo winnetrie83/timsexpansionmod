@@ -1,0 +1,22 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "minecraft:cube_all"
+    },
+    
+    "variants": {
+        "variant": {
+            "normal": {
+                "textures": {
+                    "all": "tem:blocks/marblestone_cobble"
+                }
+            },
+            "mossy": {
+                "textures": {
+                    "all": "tem:blocks/marblestone_cobble_mossy"
+                }
+            }
+        }
+    }
+}
+

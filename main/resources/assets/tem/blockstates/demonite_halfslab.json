@@ -1,0 +1,37 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "top": "#all",
+            "bottom": "#all",
+            "side": "#all"
+        }
+    },
+    "variants": {
+        "half": {
+            "bottom": {
+                "model": "minecraft:half_slab"
+            },
+            "top": {
+                "model": "minecraft:upper_slab"
+            }
+        },
+        
+
+        "variant": {
+            "raw": {
+                "textures": {
+                    "top": "tem:blocks/demonite_smooth_top",
+                    "bottom": "tem:blocks/demonite_smooth_top",
+                    "side": "tem:blocks/demonite_smooth_side"
+                }
+            },
+            "brick": {
+                "textures": {
+                    "all": "tem:blocks/demonite_brick"
+                }
+            }
+        }
+        
+    }
+}

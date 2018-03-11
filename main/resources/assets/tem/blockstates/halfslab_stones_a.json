@@ -1,0 +1,59 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "top": "#all",
+            "bottom": "#all",
+            "side": "#all"
+        }
+    },
+    "variants": {
+        "half": {
+            "bottom": {
+                "model": "minecraft:half_slab"
+            },
+            "top": {
+                "model": "minecraft:upper_slab"
+            }
+        },
+        
+
+        "variant": {
+            "limestone_raw": {
+                "textures": {
+                    "top": "tem:blocks/limestone_smooth_top",
+                    "bottom": "tem:blocks/limestone_smooth_top",
+                    "side": "tem:blocks/limestone_smooth_side"
+                }
+            },
+            "marblestone_raw": {
+                "textures": {
+                    "top": "tem:blocks/marblestone_smooth_top",
+                    "bottom": "tem:blocks/marblestone_smooth_top",
+                    "side": "tem:blocks/marblestone_smooth_side"                  
+                }
+            },
+            "limestone_cobble": {
+                "textures": {
+                    "all": "tem:blocks/limestone_cobble"
+                }
+            },
+            "marblestone_cobble": {
+                "textures": {
+                    "all": "tem:blocks/marblestone_cobble"
+                }
+            },
+            "limestone_brick": {
+                "textures": {
+                    "all": "tem:blocks/limestone_brick"
+                }
+            },
+            "marblestone_brick": {
+                "textures": {
+                    "all": "tem:blocks/marblestone_brick"
+                }
+            }
+        }
+        
+    }
+}
