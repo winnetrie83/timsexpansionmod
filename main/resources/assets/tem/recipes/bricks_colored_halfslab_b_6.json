@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "tem:bricks_colored_halfslab_b",
+    "data": 6,
+    "count": 6
+  },
+  "pattern": [
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "tem:bricks_colored",
+      "data": 14
+    }
+  }
+}

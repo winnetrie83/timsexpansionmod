@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "tem:colored_clay",
+    "data": 2
+  },
+  "pattern": [
+    "BB",
+    "BB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "tem:clayball_colored",
+      "data": 2
+    }
+  }
+}

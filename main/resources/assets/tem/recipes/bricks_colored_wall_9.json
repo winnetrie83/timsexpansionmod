@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "tem:bricks_colored_wall",
+    "data": 9,
+    "count": 6
+  },
+  "pattern": [
+    "BBB",
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "tem:bricks_colored",
+      "data": 9
+    }
+  }
+}

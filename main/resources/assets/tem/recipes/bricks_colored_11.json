@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "tem:bricks_colored",
+    "data": 11
+  },
+  "pattern": [
+    "BB",
+    "BB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "tem:colored_brick",
+      "data": 11
+    }
+  }
+}

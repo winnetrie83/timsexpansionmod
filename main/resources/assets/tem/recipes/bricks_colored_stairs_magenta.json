@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "tem:bricks_colored_stairs_magenta",
+    "count": 4
+  },
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "tem:bricks_colored",
+      "data": 2
+    }
+  }
+}
