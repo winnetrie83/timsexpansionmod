@@ -1,0 +1,22 @@
+{
+  "result": {
+    "item": "tem:colored_clay",
+    "data": 12,
+    "count": 8
+  },
+  "pattern": [
+    "BBB",
+    "BCB",
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "minecraft:clay"
+    },
+    "C": {
+      "item": "minecraft:dye",
+      "data": 3
+    }
+  }
+}

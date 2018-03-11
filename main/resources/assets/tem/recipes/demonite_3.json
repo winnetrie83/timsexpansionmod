@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "tem:demonite",
+    "data": 3
+  },
+  "pattern": [
+    "B",
+    "B"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "tem:demonite_halfslab",
+      "data": 1
+    }
+  }
+}

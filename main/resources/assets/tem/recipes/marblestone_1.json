@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "tem:marblestone",
+    "data": 1,
+    "count": 4
+  },
+  "pattern": [
+    "BB",
+    "BB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "tem:marblestone",
+      "data": 0
+    }
+  }
+}

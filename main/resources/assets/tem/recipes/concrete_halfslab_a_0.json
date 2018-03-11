@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "tem:concrete_halfslab_a",
+    "data": 0,
+    "count": 6
+  },
+  "pattern": [
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "minecraft:concrete",
+      "data": 0
+    }
+  }
+}

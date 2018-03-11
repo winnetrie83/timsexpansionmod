@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tem:limestone_cobble",
+    "data": 1
+  },
+  "pattern": [
+    "BV"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "tem:limestone_cobble",
+      "data": 0
+    },
+    "V": {
+      "item": "minecraft:vine"
+    }
+  }
+}

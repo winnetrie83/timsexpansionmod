@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "tem:marblestone_cobble_stairs"
+  },
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "tem:marblestone_cobble",
+      "data": 0
+    }
+  }
+}

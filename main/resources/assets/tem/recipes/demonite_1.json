@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "tem:demonite",
+    "data": 1,
+    "count": 4
+  },
+  "pattern": [
+    "BB",
+    "BB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "tem:demonite",
+      "data": 0
+    }
+  }
+}

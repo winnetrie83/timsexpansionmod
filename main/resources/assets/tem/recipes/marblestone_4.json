@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "tem:marblestone",
+    "data": 4
+  },
+  "pattern": [
+    "B",
+    "B"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "tem:halfslab_stones_a",
+      "data": 5
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "tem:terracotta_brick",
+    "data": 0,
+    "count": 4
+  },
+  "pattern": [
+    "BB",
+    "BB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "minecraft:stained_hardened_clay",
+      "data": 0
+    }
+  }
+}

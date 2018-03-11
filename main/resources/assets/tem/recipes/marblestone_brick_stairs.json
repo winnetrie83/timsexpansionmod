@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "tem:marblestone_brick_stairs"
+  },
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "tem:marblestone",
+      "data": 1
+    }
+  }
+}

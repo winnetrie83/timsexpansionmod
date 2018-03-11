@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "tem:limestone_cobble_stairs",
+    "count": 6
+  },
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "tem:limestone_cobble",
+      "data": 0
+    }
+  }
+}
