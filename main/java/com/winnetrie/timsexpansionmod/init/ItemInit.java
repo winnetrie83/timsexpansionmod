@@ -24,7 +24,7 @@ public class ItemInit {
 	public static final Item TERRACOTTA_BUCKET_LAVA = (new ItemTerracottaBucket("terracotta_bucket_lava",Blocks.LAVA)).setContainerItem(TERRACOTTA_BUCKET_EMPTY);
 	
 	public static final Item CLAYBALL_COLORED = new ItemClayballColored("clayball_colored");
-	public static final Item TERRACOTTA_BRICK_COLORED = new ItemTerracottaBrickColored("terracottabrick_colored");
+	public static final Item TERRACOTTA_BRICK_COLORED = new ItemTerracottaBrickColored("colored_brick");
 
 	
 }
