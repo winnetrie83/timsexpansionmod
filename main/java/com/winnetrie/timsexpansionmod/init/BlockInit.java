@@ -12,14 +12,17 @@ import com.winnetrie.timsexpansionmod.blocks.BlockBaseStairs;
 import com.winnetrie.timsexpansionmod.blocks.BlockColoredClay;
 import com.winnetrie.timsexpansionmod.blocks.BrickedTerracottaBlock;
 import com.winnetrie.timsexpansionmod.blocks.LimeStoneCobble;
+import com.winnetrie.timsexpansionmod.blocks.LimeStoneWall;
 import com.winnetrie.timsexpansionmod.blocks.MarbleStoneBlock;
 import com.winnetrie.timsexpansionmod.blocks.MarbleStoneCobble;
+import com.winnetrie.timsexpansionmod.blocks.MarbleStoneWall;
 import com.winnetrie.timsexpansionmod.blocks.StoneDoubleSlabA;
 import com.winnetrie.timsexpansionmod.blocks.StoneHalfSlabA;
 import com.winnetrie.timsexpansionmod.blocks.ConcreteWallColored;
 import com.winnetrie.timsexpansionmod.blocks.DemoniteBlock;
 import com.winnetrie.timsexpansionmod.blocks.DemoniteDoubleSlab;
 import com.winnetrie.timsexpansionmod.blocks.DemoniteHalfSlab;
+import com.winnetrie.timsexpansionmod.blocks.DemoniteWall;
 import com.winnetrie.timsexpansionmod.blocks.FelironOreBlock;
 import com.winnetrie.timsexpansionmod.blocks.LimeStoneBlock;
 import com.winnetrie.timsexpansionmod.blocks.TerracottaBlock;
@@ -66,6 +69,10 @@ public class BlockInit {
 	public static final Block DEMONITE_BRICK_STAIRS = (new BlockBaseStairs("demonite_brick_stairs", BlockInit.DEMONITE.getDefaultState()));
 	public static final Block DEMONITE_HALFSLABS = (new DemoniteHalfSlab("demonite_halfslab", Material.ROCK));
 	public static final Block DEMONITE_DOUBLESLABS = (new DemoniteDoubleSlab("demonite_doubleslab", Material.ROCK, DEMONITE_HALFSLABS));
+	
+	public static final Block LIMESTONEWALL = (new LimeStoneWall("limestone_wall", BlockInit.LIMESTONE.getDefaultState()));
+	public static final Block MARBLESTONEWALL = (new MarbleStoneWall("marblestone_wall", BlockInit.MARBLESTONE.getDefaultState()));
+	public static final Block DEMONITEWALL = (new DemoniteWall("demonite_wall", BlockInit.DEMONITE.getDefaultState()));
 	
 	//SLABS
 	public static final Block TERRACOTTA_SLABS_HALF_A = (new BlockBaseHalfSlabColoredA("terracotta_halfslab_a", Blocks.STAINED_HARDENED_CLAY.getDefaultState())).setHardness(1.25F).setResistance(7.0F);
