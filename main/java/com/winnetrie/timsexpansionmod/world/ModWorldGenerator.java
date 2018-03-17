@@ -9,11 +9,14 @@ import com.winnetrie.timsexpansionmod.util.ConfigHandler;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.biome.Biome;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.WorldGenMinable;
+import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
 public class ModWorldGenerator implements IWorldGenerator{
@@ -58,23 +61,17 @@ public class ModWorldGenerator implements IWorldGenerator{
 		int XX = x * 16;
 		int ZZ = z * 16;
 		BlockPos pos = new BlockPos(XX, 70, ZZ);
-		String biome = world.getBiome(pos).getBiomeName();
-  
-		//System.out.println("Trying to generate in: "+ world.getBiome(pos).getBiomeName());
+		Biome biome = world.getBiome(pos);
+		
 		if (ConfigHandler.enable_limestone_gen == true) {
-			if (biome.contains("River")) {
-				//System.out.println("GENERATING LIMESTONE IN: " + world.getBiome(pos).getBiomeName());
+			if (BiomeDictionary.hasType(biome, BiomeDictionary.Type.RIVER)) {
 				generateOre(BlockInit.LIMESTONE.getDefaultState(), world, rand, 0, x, z, 25, 33, ConfigHandler.limestone_gen_chance * 2, 45, 65, BlockMatcher.forBlock(Blocks.STONE));
 			}
-			if (biome.contains("Ocean")) {
-				//System.out.println("generating limestone in oceans");
-				//generateOre(BlockInit.LIMESTONE.getDefaultState(), world, rand, 0, x, z, 15, 33, ConfigHandler.limestone_gen_chance, 20, 50, BlockMatcher.forBlock(Blocks.STONE));
+			if (BiomeDictionary.hasType(biome, BiomeDictionary.Type.OCEAN)) {
 				generateOre(BlockInit.LIMESTONE.getDefaultState(), world, rand, 0, x, z, 15, 33, ConfigHandler.limestone_gen_chance, 10, 50, BlockMatcher.forBlock(Blocks.STONE));
-				//generateOre(BlockInit.LIMESTONE.getDefaultState(), world, rand, 0, x, z, 10, 15, ConfigHandler.limestone_gen_chance, 30, 50, BlockMatcher.forBlock(Blocks.STONE));
 			}
 		}
-		if ((ConfigHandler.enable_marblestone_gen == true) && ((biome.contains("Hills")) || (biome.contains("Mountain")))) {
-			//System.out.println("GENERATING MARBLESTONE IN: " + world.getBiome(pos).getBiomeName());
+		if ((ConfigHandler.enable_marblestone_gen == true) && (BiomeDictionary.hasType(biome, BiomeDictionary.Type.HILLS)) || (BiomeDictionary.hasType(biome, BiomeDictionary.Type.MOUNTAIN))) {
 			generateOre(BlockInit.MARBLESTONE.getDefaultState(), world, rand, 0, x, z, 25, 33, ConfigHandler.marblestone_gen_chance, 65, 256, BlockMatcher.forBlock(Blocks.STONE));
 		}
 	}
